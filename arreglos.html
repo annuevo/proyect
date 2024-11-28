@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería Virtual</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Librería Virtual</h1>
+    </header>
+    <main>
+        <section id="book-list">
+            <h2>Lista de Libros</h2>
+            <select id="filter-genre">
+                <option value="all">Todos los Géneros</option>
+                <option value="fiction">Ficción</option>
+                <option value="no-fiction">No Ficción</option>
+                <option value="fantasy">Fantasía</option>
+            </select>
+            <button id="sort-price">Ordenar por Precio</button>
+            <button id="sort-id">Ordenar por el id</button>
+            <ul id="books"></ul>
+        </section>
+        <section id="cart">
+            <h2>Carrito</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: <span id="cart-total">$0.00</span></p>
+        </section>
+    </main>
+</body>
+<script type="module" src="./java/codigo.js"></script>
+</html>
